@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Afacad", sans-serif;
+  /* background-color: #fff6ee; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.3rem;
+}
+
+nav {
+  background: rgba(0, 0, 0);
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.43);
+}
+.nav_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease-in-out 0.3s;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: goldenrod;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+a:hover {
+  color: goldenrod;
+  transition: all ease-in-out 0.3s;
+}
+
+a:focus,
+a:active {
+  border: 1px solid goldenrod;
+  border-radius: 15px;
+}
+
+.altschool a {
+  border-radius: 15px;
+  padding: 0.5rem;
+  background-color: goldenrod;
+  transition: all ease-in-out 0.3s;
+  color: black;
+}
+.altschool a:hover {
+  color: goldenrod;
+  background-color: white;
+}
+
+#about {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.altz {
+  color: black;
+  padding: 0;
+  text-decoration: double;
+  text-decoration-line: underline;
+  text-decoration-color: goldenrod;
+}
+.altz:focus,
+.altz:active {
+  border: none;
+}
+
+article P {
+  margin: 1rem 0rem;
+}
+
+#about {
+  margin-top: 8rem;
+  padding: 1.5rem;
+}
+.abt_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.abt_heading {
+  text-align: right;
+}
+.abt_heading h1 {
+  font-size: 2.5rem;
+}
+
+.coder {
+  width: 50%;
+}
+.coder img {
+  width: 100%;
+}
+.at2 {
+  display: flex;
+  align-items: center;
+}
+.at2 p {
+  width: 50%;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  .nav_inner {
+    display: block;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .logo {
+    margin-bottom: 1rem;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+  }
+  #about {
+    text-align: center;
+  }
+  .abt_wrap {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .coder {
+    width: 100%;
+  }
+  .abt_heading {
+    text-align: center;
+  }
+  .abt_heading h1 {
+    font-size: 1.7rem;
+  }
+  .at2 {
+    display: grid;
+  }
+  .at2 p {
+    width: 100%;
+  }
+}
