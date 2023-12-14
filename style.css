@@ -169,3 +169,7 @@ article P {
     width: 100%;
   }
 }
+
+@media screen and (max-width:300px){
+  
+}
