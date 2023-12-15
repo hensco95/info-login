@@ -153,6 +153,7 @@ select:active {
   outline: 2px solid firebrick;
 }
 
+
 .err_txt {
   /* font-weight:100; */
   color: firebrick;

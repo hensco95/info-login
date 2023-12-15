@@ -58,7 +58,7 @@
               aria-labelledby="firstNameLabel"
               aria-describedby="firstName_err"
             />
-            <p class="err_txt" id="firstName_err">Enter a valid name</p>
+            <p class="err_txt" id="firstName_err">Enter a valid first name</p>
           </div>
 
           <!-- last name -->
@@ -146,14 +146,14 @@
                 Select educational level
               </option>
 
-              <option value="">Bsc</option>
-              <option value="">Msc</option>
-              <option value="">Diploma</option>
-              <option value="">Doctorate (PhD)</option>
-              <option value="">High School / Secondary School</option>
-              <option value="">Undergraduate</option>
-              <option value="">Junior / Midddle School</option>
-              <option value="">Post Graduate</option>
+              <option value="Bsc">Bsc</option>
+              <option value="Msc">Msc</option>
+              <option value="Diploma">Diploma</option>
+              <option value="Doctorate (PhD)">Doctorate (PhD)</option>
+              <option value="High School / Secondary School">High School / Secondary School</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Junior / Midddle School">Junior / Midddle School</option>
+              <option value="Post Graduate">Post Graduate</option>
             </select>
 
             <p class="err_txt" id="edu_err">Select a level</p>
@@ -216,11 +216,11 @@
               <option value="" disabled selected>
                 Select employment status
               </option>
-              <option value="">Employed</option>
-              <option value="">Unemployed</option>
-              <option value="">Self-employed</option>
+              <option value="Employed">Employed</option>
+              <option value="Unemployed">Unemployed</option>
+              <option value="Self-employed">Self-employed</option>
             </select>
-            <p class="err_txt" id="employ_err">Enter a valid name</p>
+            <p class="err_txt" id="employ_err">Select an employemnt status</p>
           </div>
 
           <!-- phoneNumber -->
@@ -251,16 +251,16 @@
               aria-describedby="school_err"
             >
               <option value="" disabled selected>Select school</option>
-              <option value="">School of Engineering</option>
-              <option value="">School of Data</option>
-              <option value="">School of Design</option>
-              <option value="">School of Business</option>
+              <option value="School of Engineering">School of Engineering</option>
+              <option value="School of Data">School of Data</option>
+              <option value="School of Design">School of Design</option>
+              <option value="School of Business">School of Business</option>
             </select>
 
             <p class="err_txt" id="school_err">Choose a school</p>
           </div>
 
-          <!-- choice of study -->
+          <!-- course of study -->
           <div class="input_wrap">
             <label for="course" class="courseLabel"> Select Course </label>
             <select
@@ -272,10 +272,10 @@
               aria-describedby="course_err"
             >
               <option value="" disabled selected>Select Course</option>
-              <option value="">Front-End Engineering</option>
-              <option value="">Back-End Engineering</option>
-              <option value="">Cloud Engineering</option>
-              <option value="">Product Design</option>
+              <option value="Front-End Engineering">Front-End Engineering</option>
+              <option value="Back-End Engineering">Back-End Engineering</option>
+              <option value="Cloud Engineering">Cloud Engineering</option>
+              <option value="Product Design">Product Design</option>
             </select>
             <p class="err_txt">Select a course</p>
           </div>
@@ -293,14 +293,14 @@
               aria-describedby="info_err"
             >
               <option value="" disabled selected>Select Channel</option>
-              <option value="">Twitter</option>
-              <option value="">Facebook</option>
-              <option value="">Instagram</option>
-              <option value="">LinkedIn</option>
-              <option value="">Youtube</option>
-              <option value="">Google</option>
-              <option value="">WhatsApp</option>
-              <option value="">Friend</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Instagram">Instagram</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Youtube">Youtube</option>
+              <option value="Google">Google</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Friend">Friend</option>
             </select>
             <p class="err_txt">Select a channel</p>
           </div>
@@ -312,7 +312,7 @@
               type="text"
               id="discount"
               name="discount"
-              placeholder="Enter your first name"
+              placeholder="Scholarship or Student ID"
               aria-required="false"
               aria-labelledby="discountLabel"
             />
