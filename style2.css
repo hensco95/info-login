@@ -147,6 +147,7 @@ select:hover,
 select:active {
   /* border: 1px solid goldenrod; */
   outline: 2px solid goldenrod;
+  background-color: white;
 }
 
 .err {
