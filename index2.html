@@ -46,159 +46,283 @@
         <form>
           <!-- first name -->
           <div class="input_wrap">
-            <label for="First Name"> First Name </label>
+            <label for="f_name" class="firstNameLabel"> First Name </label>
             <input
               type="text"
               id="f_name"
               name="f_name"
               placeholder="Enter your first name"
+              aria-placeholder="Enter your first name"
+              aria-required="true"
+              aria-label="Enter your first name"
+              aria-labelledby="firstNameLabel"
+              aria-describedby="firstName_err"
             />
-            <p class="err_txt">Enter a valid name</p>
+            <p class="err_txt" id="firstName_err">Enter a valid name</p>
           </div>
 
           <!-- last name -->
           <div class="input_wrap">
-            <label for="Lastt Name"> Last Name </label>
+            <label for="l_name" class="lastNameLabel"> Last Name </label>
             <input
               type="text"
               id="l_name"
               name="l_name"
               placeholder="Enter your last name"
+              aria-placeholder="Enter your last name"
+              aria-required="true"
+              aria-label="Enter your last name"
+              aria-labelledby="lastNameLabel"
+              aria-describedby="lastName_err"
             />
-            <p class="err_txt">Enter a valid last name</p>
+            <p class="err_txt" id="lastName_err">Enter a valid last name</p>
           </div>
 
           <!-- Gender -->
           <div class="input_wrap">
-            <label for="First Name"> Gender </label>
-            <select name="Gender" id="gender">
-              <option value="0">Select gender</option>
-              <option value="1">Male</option>
-              <option value="2">Female</option>
+            <label for="gender" class="genderLabel"> Gender </label>
+            <select
+              name="Gender"
+              id="gender"
+              aria-required="true"
+              aria-label="Select Gender"
+              aria-labelledby="genderLabel"
+              aria-describedby="gender_err"
+              aria-invalid="false"
+            >
+              <option value="" disabled selected>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
             </select>
-            <p class="err_txt">Select your gender</p>
+            <p class="err_txt" id="gender_err">Select your gender</p>
           </div>
 
           <!-- Date of birth -->
           <div class="input_wrap">
-            <label for="First Name"> Date of Birth </label>
+            <label for="date of birth" class="dobLabel"> Date of Birth </label>
             <input
               type="date"
-              id="f_name"
-              name="f_name"
-              placeholder=""
+              id="dob"
+              name="dob"
+              aria-required="true"
+              aria-labelledby="dobLabel"
+              aria-label="Enter your date of birth"
+              aria-describedby="dob_error"
             />
-            <p class="err_txt">Enter a date of birth</p>
+            <p class="err_txt" id="dob_error">Enter your date of birth</p>
           </div>
-          
+
+          <!-- email address -->
           <div class="input_wrap">
-            <label for="First Name"> First Name </label>
+            <label for="email" class="emailLabel"> Email Address </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              aria-required="true"
+              aria-invalid="true"
+              aria-labelledby="emailLabel"
+              aria-label="Enter your email"
+              aria-describedby="email_err"
+            />
+            <p class="err_txt" id="email_err">Enter a valid email</p>
+          </div>
+
+          <!-- edu level -->
+          <div class="input_wrap">
+            <label for="education" class="eduLabel"> Education Level </label>
+            <select
+              type="text"
+              name="education"
+              id="education"
+              aria-invalid="false"
+              aria-required="true"
+              aria-label="Select an educational level"
+              aria-labelledby="eduLabel"
+              aria-describedby="edu_err"
+            >
+              <option value="" disabled selected>
+                Select educational level
+              </option>
+
+              <option value="">Bsc</option>
+              <option value="">Msc</option>
+              <option value="">Diploma</option>
+              <option value="">Doctorate (PhD)</option>
+              <option value="">High School / Secondary School</option>
+              <option value="">Undergraduate</option>
+              <option value="">Junior / Midddle School</option>
+              <option value="">Post Graduate</option>
+            </select>
+
+            <p class="err_txt" id="edu_err">Select a level</p>
+          </div>
+
+          <!--country  -->
+          <div class="input_wrap">
+            <label for="Country" class="countryLabel"> Country </label>
+
+            <select
+              id="country"
+              name="country"
+              aria-required="true"
+              aria-labelledby="countryLabel"
+              aria-label="Search or select country"
+              aria-describedby="country_err"
+            >
+              <option value="" disabled selected>Select Country</option>
+            </select>
+
+            <p class="err_txt" id="country_err">Select a country</p>
+          </div>
+
+          <!-- state / city of residence -->
+          <div class="input_wrap">
+            <label for="city" class="cityLabel">
+              State / City of residence
+            </label>
             <input
               type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
+              id="city"
+              name="city"
+              placeholder="Enter your city"
+              aria-required="true"
+              aria-placeholder="Enter your city"
+              aria-label="City"
+              aria-labelledby="cityLabel"
+              aria-describedby="city_err"
             />
-            <p class="err_txt">Enter a valid name</p>
+            <p class="err_txt" id="city_err">Enter a city</p>
           </div>
+
+          <!-- employment status -->
           <div class="input_wrap">
-            <label for="First Name"> First Name </label>
+            <label for="employment" class="employLabel">
+              Employment Status
+            </label>
+
+            <select
+              type="text"
+              id="employmentStatusInput"
+              name="employmentStatus"
+              aria-required="true"
+              aria-labelledby="employLabel"
+              list="employmentStatusOptions"
+              aria-describedby="employ_err"
+              placeholder="Search or select employment status"
+              aria-label="Search or select employment status"
+            >
+              <option value="" disabled selected>
+                Select employment status
+              </option>
+              <option value="">Employed</option>
+              <option value="">Unemployed</option>
+              <option value="">Self-employed</option>
+            </select>
+            <p class="err_txt" id="employ_err">Enter a valid name</p>
+          </div>
+
+          <!-- phoneNumber -->
+          <div class="input_wrap">
+            <label for="number" class="numberLabel"> Phone Number </label>
             <input
               type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
+              id="number"
+              name="number"
+              placeholder="+2341234567890"
+              aria-required="true"
+              aria-label="Phone Number"
+              aria-labelledby="numberLabel"
+              aria-describedby="num_err"
             />
-            <p class="err_txt">Enter a valid name</p>
+            <p class="err_txt" id="num_err">Enter a valid name</p>
           </div>
+
+          <!-- school -->
           <div class="input_wrap">
-            <label for="First Name"> First Name </label>
+            <label for="school" class="schoolLabel"> Choose school </label>
+            <select
+              id="school"
+              name="school"
+              aria-required="true"
+              aria-labelledby="schoolLabel"
+              aria-label="choose school"
+              aria-describedby="school_err"
+            >
+              <option value="" disabled selected>Select school</option>
+              <option value="">School of Engineering</option>
+              <option value="">School of Data</option>
+              <option value="">School of Design</option>
+              <option value="">School of Business</option>
+            </select>
+
+            <p class="err_txt" id="school_err">Choose a school</p>
+          </div>
+
+          <!-- choice of study -->
+          <div class="input_wrap">
+            <label for="course" class="courseLabel"> Select Course </label>
+            <select
+              name="course"
+              id="course"
+              aria-required="true"
+              aria-labelledby="countryLabel"
+              aria-label="select a course"
+              aria-describedby="course_err"
+            >
+              <option value="" disabled selected>Select Course</option>
+              <option value="">Front-End Engineering</option>
+              <option value="">Back-End Engineering</option>
+              <option value="">Cloud Engineering</option>
+              <option value="">Product Design</option>
+            </select>
+            <p class="err_txt">Select a course</p>
+          </div>
+
+
+          <!-- how did you hear about us -->
+          <div class="input_wrap">
+            <label for="info" class="infoLabel">How did you hear about us</label>
+            <select
+              name="info"
+              id="info"
+              aria-required="true"
+              aria-labelledby="infoLabel"
+              aria-label="select a channel"
+              aria-describedby="info_err"
+            >
+              <option value="" disabled selected>Select Channel</option>
+              <option value="">Twitter</option>
+              <option value="">Facebook</option>
+              <option value="">Instagram</option>
+              <option value="">LinkedIn</option>
+              <option value="">Youtube</option>
+              <option value="">Google</option>
+              <option value="">WhatsApp</option>
+              <option value="">Friend</option>
+            </select>
+            <p class="err_txt">Select a channel</p>
+          </div>
+
+          <!-- discount -->
+          <div class="input_wrap">
+            <label for="discount" class="discountLabel"> Scholarship / Discount Code (Optional) </label>
             <input
               type="text"
-              id="f_name"
-              name="f_name"
+              id="discount"
+              name="discount"
               placeholder="Enter your first name"
+              aria-required="false"
+              aria-labelledby="discountLabel"
             />
-            <p class="err_txt">Enter a valid name</p>
-          </div>
-          <div class="input_wrap">
-            <label for="First Name"> First Name </label>
-            <input
-              type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
-            />
-            <p class="err_txt">Enter a valid name</p>
-          </div>
-          <div class="input_wrap">
-            <label for="First Name"> First Name </label>
-            <input
-              type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
-            />
-            <p class="err_txt">Enter a valid name</p>
-          </div>
-          <div class="input_wrap">
-            <label for="First Name"> First Name </label>
-            <input
-              type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
-            />
-            <p class="err_txt">Enter a valid name</p>
-          </div>
-          <div class="input_wrap">
-            <label for="First Name"> First Name </label>
-            <input
-              type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
-            />
-            <p class="err_txt">Enter a valid name</p>
-          </div>
-          <div class="input_wrap">
-            <label for="First Name"> First Name </label>
-            <input
-              type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
-            />
-            <p class="err_txt">Enter a valid name</p>
-          </div>
-          <div class="input_wrap">
-            <label for="First Name"> First Name </label>
-            <input
-              type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
-            />
-            <p class="err_txt">Enter a valid name</p>
-          </div>
-          <div class="input_wrap">
-            <label for="First Name"> First Name </label>
-            <input
-              type="text"
-              id="f_name"
-              name="f_name"
-              placeholder="Enter your first name"
-            />
-            <p class="err_txt">Enter a valid name</p>
           </div>
 
           <p class="terms">
-            By clicking continue, I agree to<a href="#">Terms of Use</a> and acknowledge that I
-            have read the <a href="#">Privacy Policy</a>.
+            By clicking continue, I agree to<a href="#">Terms of Use</a> and
+            acknowledge that I have read the <a href="#">Privacy Policy</a>.
           </p>
-          <button type="submit" id="submit_btn">
-            Proceed
-          </button>
+          <button type="submit" id="submit_btn">Proceed</button>
         </form>
       </div>
     </section>
